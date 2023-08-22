@@ -15,7 +15,7 @@ const User=require('./model/userSchema');
 
 app.use(require('./router/auth'));
 
-const PORT=process.env.PORT;
+const PORT=process.env.PORT || 5000;
 
  
 app.listen(PORT,()=>{
